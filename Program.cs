@@ -35,3 +35,21 @@ string[] SortArray1(string[] array1)
     }
     return newArray1;
 }
+
+string[] SortArray2(string[] array2)
+{
+    string[] newArray2 = new string[array2.Length];
+
+    int count = 0;
+
+    for (int i = 0; i < array2.Length; i++)
+    {
+        if (array2[i].Length <= 3)
+        {
+            newArray2[count] = array2[i];
+            count++;
+        }
+    }
+    return newArray2;
+}
+
