@@ -69,3 +69,18 @@ string[] SortArray3(string[] array3)
     }
     return newArray3;
 }
+Console.Write($"Начальный массив: [" + string.Join(", ", array1) + "]" + "\n");
+string sortedArrayString1 = string.Join(", ", SortArray1(array1));
+sortedArrayString1 = sortedArrayString1.TrimEnd(',', ' ');
+Console.WriteLine($"Конечный массив: [" + sortedArrayString1 + "]"+"\n");
+
+Console.Write($"Начальный массив: [" + string.Join(", ", array2) + "]" + "\n");
+string sortedArrayString2 =  string.Join(", ", SortArray2(array2));
+sortedArrayString2 = sortedArrayString2.TrimEnd(',', ' ');
+Console.Write($"Конечный массив: [" + sortedArrayString2 + "]"+ "\n" + "\n");
+
+Console.Write($"Начальный массив: [" + string.Join(", ", array3) + "]" + "\n");
+string sortedArrayString3 = string.Join(", ", SortArray3(array3));
+sortedArrayString3 = sortedArrayString3.TrimEnd(',', ' ');
+Console.Write($"Конечный массив: [" + sortedArrayString3 + "]"+ "\n");
+
