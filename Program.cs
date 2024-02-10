@@ -53,3 +53,19 @@ string[] SortArray2(string[] array2)
     return newArray2;
 }
 
+string[] SortArray3(string[] array3)
+{
+    string[] newArray3 = new string[array3.Length];
+
+    int count = 0;
+
+    for (int i = 0; i < array3.Length; i++)
+    {
+        if (array3[i].Length <= 3)
+        {
+            newArray3[count] = array3[i];
+            count++;
+        }
+    }
+    return newArray3;
+}
